@@ -103,3 +103,42 @@ const add = (a, b) => a + b;
 const simpleMultiply = (a, b) => {
     return a * b; //블록도 넣으면 return을 이용해 값을 반환해야한다.
 }
+
+
+
+
+
+// quiz ~~
+function calculate(command, a, b) {
+    if (command === 'add') {
+        return a + b;
+    } else if (command === 'substract') {
+        return a - b;
+    } else if (command === 'divide') {
+        return a / b;
+    } else if (command === 'multiply') {
+        return a * b;
+    } else if (command === 'remainder') {
+        return a % b
+    }
+}
+
+console.log(`if문으로 ${calculate('add',2,3)} 하지만 정답은..`)
+
+//x -> 정해진 데이터 처리는 switch문 쓰기
+
+function calcul(command, a, b) {
+    switch (command) {
+        case 'add':
+            return a + b;
+        case 'substract':
+            return a - b;
+        case 'divide':
+            return a / b;
+        case 'multiply':
+            return a * b;
+        case 'remainder':
+            return a % b;
+    }
+}
+console.log(`switch문으로 ${calcul('add', 4, 5)}`)

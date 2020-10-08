@@ -105,12 +105,20 @@ do {
 } while (i > 0);
 
 
-//nested loops cpu에 안좋음
+//nested loops cpu에 안좋음(for문안에 for문)
 
 //break, continue
 //01.
-let j = 0;
-while (j > 10) {
-    console.log(`j값은 ${j}`);
-    j++;
+for (let i = 0; i < 11; i++) {
+    if (i % 2 !== 0) {
+        continue;
+    }
+    console.log(i)
+}
+//02.
+for (let i = 0; i < 11; i++) {
+    if (i > 8) {
+        break;
+    }
+    console.log(i)
 }

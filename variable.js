@@ -53,7 +53,7 @@ let nothing = null;
 //undefined
 let x;
 
-//symbol, create unique identifiedrs for objects
+//symbol, create unique identifiedrs for objects (고유한 식별자 만들기)
 const symbol1 = Symbol('id');
 const symbol2 = Symbol('id');
 console.log(symbol1 === symbol2); //false출력
