@@ -1,4 +1,4 @@
-'use strict'; //비상식적인거 발생하지않게 
+'use strict'; // 비상식적인거 발생하지않게, 모던하게 개발하자
 
 
 // 2.Variable , rw(read/write)
@@ -22,9 +22,9 @@ let age2;
 
 // 3. Constant , r(read only)
 // favor immutable data type always for a few reasons:
-// - security
-// - thread safety
-// - reduce human mistakes
+// - security (보안)
+// - thread safety (동시접근x)
+// - reduce human mistakes (실수방지)
 const days = 4;
 
 
