@@ -2,6 +2,8 @@
 
 // Q1. make a string out of an array
 {
+
+    // ********************************* 틀리진 않았지만 join 도 가능
     const fruits = ['apple', 'banana', 'orange'];
 
     console.log(fruits.toString());
@@ -12,7 +14,7 @@
 // Q2. make an array out of a string
 {
     const fruits = '🍎, 🥝, 🍌, 🍒';
-
+    // *********************************** 틀림
     const arr = [];
     arr.push(fruits.split(','));
     console.log(arr)
@@ -21,24 +23,25 @@
 // Q3. make this array look like this: [5, 4, 3, 2, 1]
 {
     const array = [1, 2, 3, 4, 5];
-    const newArr = [];
+    let newArr = [];
 
     console.log("---------------------")
-    const pops = array.pop();
-    console.log(pops)
-
-    for (let value of array) {
-        console.log(value.pop());
+    for (let i = 0; i < 5; i++) {
+        newArr.push(array.pop());
     }
     console.log(newArr)
+
+
 
 }
 
 // Q4. make new array without the first two elements
 {
+    //********************* 틀림, 새로운 배열을 만들어야 하기때문에 slice 써야함
     const array = [1, 2, 3, 4, 5];
     const newArr = array.splice(2);
-    console.log(newArr);
+    console.log(array); //  [1,2]
+    console.log(newArr); // [3,4,5]
 
 
 
@@ -62,11 +65,12 @@ const students = [
 
 // Q5. find a student with the score 90
 {
-
+    // ****************** 정답은 맞는데 find 사용가능
     students.forEach((students) => {
         if (students.score === 90) {
             console.log(students)
         }
+
 
     })
 
